@@ -1,0 +1,511 @@
+/* header */
+
+header img {
+    width: 120px;
+}
+
+header {
+    padding: 40px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    border-color: #065656;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: white;
+
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #065656;
+}
+
+.navbar {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    background-color: #065656;
+    /* animation-name: example;
+      animation-duration: 1s; */
+    animation-name: shutter-in-top;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes shutter-in-top {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+
+}
+
+/*
+  @keyframes example {
+    from {background-color: #065656;}
+    to {background-color: snow;}
+  } */
+.navbar .navbar-right {
+    margin: 0 0 0 0;
+}
+
+.navbar a {
+    margin-left: 20px;
+    margin-top: 17px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    animation-name: anim2;
+    animation-duration: 1s;
+}
+
+@keyframes anim2 {
+    from {
+        color: white;
+    }
+    to {
+        color: #065656;
+    }
+}
+
+.navbar ul a:hover {
+    background-color: white;
+    color: darkcyan;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.navbar ul {
+    float: right;
+    position: relative;
+    padding-right: 60px;
+    padding-top: 25px;
+}
+
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .navbar a {
+        font-size: 17px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .navbar ul {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    .navbar ul {
+        float: none;
+        padding-right: 0;
+        padding: 0 0 0 0;
+        margin: 0 0 0;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+
+    }
+
+    .navbar a img {
+        align-content: center;
+    }
+
+    .header ul a {
+        float: none;
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+    }
+}
+
+/*header end*/
+
+
+/* foooter*/
+
+.panel-footer {
+    background: darkcyan;;
+
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+
+#social i {
+    color: white;
+    padding-right: 15px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+#social a {
+    color: white;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+}
+
+#love i {
+    color: red;
+
+}
+
+#company {
+    position: relative;
+    left: 20px;
+    padding-top: 22px;
+
+}
+
+#company p {
+    font-family: 'Itim', cursive;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+#company img {
+    height: 150px;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-decoration: underline;
+
+}
+
+#content {
+    padding-top: 40px;
+    color: white;
+    padding-left: 50px;
+
+}
+
+#social {
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+#info {
+    padding-top: 40px;
+    padding-left: 30px;
+    font-family: 'Itim', cursive;
+}
+
+#content a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Itim', cursive;
+
+}
+
+#info i, #content i {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+}
+
+/* foot end */
+.bkg {
+    background: url(https://image.freepik.com/free-photo/dark-blue-plain-wall-background_53876-92976.jpg);
+}
+
+/* FORM START */
+body {
+    background-image: url("../assets/medical2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#form {
+    width: 650px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+/* input{
+    float:right;
+    
+} */
+label {
+    float: left;
+    width: 40%;
+}
+
+form {
+    padding: 40px;;
+}
+
+#form span.form-required {
+    color: red;
+}
+
+#form span {
+    color: black;
+    font-size: 12px;
+    font-family: 'Itim', cursive;
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+}
+
+input, select {
+    height: 25px;
+}
+
+.name, .gender, .phoneno, .dob, .address, .email {
+    margin: 10px 0 10px 0;
+}
+
+.name input {
+    width: 60%;
+}
+
+.gender .input {
+    width: 60%;
+}
+
+.phoneno .number {
+    width: 30%;
+    float: left;
+
+}
+
+input#num {
+    width: 100%;
+}
+
+input#code {
+    width: 90%;
+}
+
+.address label.sublabel.form-sub-label {
+    color: grey;
+    padding-left: 2px;
+    font-size: 12px;
+    width: 60%;
+    float: right;
+}
+
+.phoneno label.sublabel.form-sub-label, .dob label.sublabel.form-sub-label {
+    color: grey;
+    padding-left: 2px;
+    font-size: 12px;
+    width: 60%;
+    float: left;
+}
+
+.dob .birthday {
+    float: left;
+}
+
+select.input.date, select.input.year {
+    width: 100%;
+}
+
+select.input.month {
+    width: 100%;
+}
+
+span.birthday {
+
+    width: 20%;
+}
+
+
+.address input, .address select {
+    float: right;
+    width: 60%;
+}
+
+.email {
+    display: inline-flex;
+    width: 100%;
+}
+
+.email .label {
+    width: 40%;
+
+}
+
+.email .input {
+    width: 60%;
+    float: right;
+}
+
+.enquiry #que {
+    width: 100%;
+}
+
+.enquiry {
+    margin: 10px 0 10px 0;
+}
+
+.enquiry input {
+    float: left;
+    position: relative;
+    top: -8px;
+    margin-right: 10px;
+}
+
+.type #type {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.type input {
+    position: relative;
+    top: -9px;
+}
+
+.type .label {
+    width: 60%;
+    color: black;
+    text-align: left;
+    font-size: 12px;
+}
+
+@media (max-width: 727px) {
+    label, input, select {
+        width: 100%;
+
+    }
+
+    #form {
+        width: 95%;
+    }
+
+    input.input, select.input, .gender .input {
+        width: 100%;
+    }
+
+    /* select#input.date, select#input.year{
+     width:20%;
+ }
+ select#input.month{
+     width: 30%;
+ } */
+    span.birthday {
+        width: 30%;
+    }
+
+    .phoneno label.sublabel.form-sub-label, .dob label.sublabel.form-sub-label, .address label.sublabel.form-sub-label {
+
+        font-size: 12px;
+        width: 100%;
+
+    }
+
+    .address input, .address select {
+        float: left;
+        width: 100%;
+    }
+
+    .enquiry input {
+        position: relative;
+        top: 20px;
+        margin-right: 10px;
+
+    }
+
+    .navbar img {
+        margin-top: 10px;
+    }
+
+    .type input {
+        position: relative;
+        top: 20px;
+        float: right;
+
+    }
+
+    .type label {
+
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .email .input {
+        width: 100%;
+    }
+}
+
+.enquiry label.label {
+    color: black;
+    font-size: 12px;
+    text-align: left;
+}
+
+button {
+    margin-top: 20px;
+    border-radius: 26px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input, select {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}

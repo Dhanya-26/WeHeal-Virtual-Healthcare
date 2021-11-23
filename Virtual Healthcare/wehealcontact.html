@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head onContextMenu="return false">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>WeHeal/ContactUs</title>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a507955c58.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Patua+One&family=Piedra&display=swap"
+          rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Itim&family=Ropa+Sans&family=Shadows+Into+Light+Two&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Hammersmith+One&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Patua+One&family=Saira:wght@500&display=swap"
+          rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/icon.png" rel="icon">
+    <link href="wehealcontact.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-image: url('assets/backgrd.jpeg'); ">
+<div class="header">
+    <nav class="navbar navbar-default" id="start">
+        <div class="navbar-header">
+            <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-nav-demo" data-toggle="collapse"
+                    type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <div class="navbar navbar-right ">
+                <a class="logo" href="index.html"><img alt="Logo" height="80px" src="assets/LOLOL.png" width="80px"> </a>
+                <ul>
+                    <a class="active" href="index.html"><i aria-hidden="true" class="fa fa-home"></i>Home</a>
+                    <a class="active" href="wehealaboutus.html"><i class="fa fa-users"></i>About Us</a>
+                    <!-- <a href="why/why_us.html">Why VirtualHealth<i class="fa fa-question" aria-hidden="true"></i></a> -->
+                    <a href="wehealservices.html"><i aria-hidden="true" class="fa fa-cog"></i>Services</a>
+<!--                    <a href="patient/bookappointment.php"><i aria-hidden="true" class="fa fa-comments-o"></i>Book-->
+<!--                        appointment</a>-->
+                    <a href="login"><i aria-hidden="true" class="fa fa-address-card-o"></i>Login</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<!-- <h1 style="margin-left: 40px; font-size: 30px;">POSTS AVAILABLE</h1>
+TILES RESPONSIVE
+<div class="tiles">
+
+  <div class="item word" style="background-image: url(Cardiologist.jpg); background-size: cover;">
+    <div class="header2">
+      <div class="title2">
+        CARDIOLOGIST
+      </div>
+    </div>
+    <div class="contents">
+      A cardiologist is a doctor with special training and skill in finding, treating and preventing diseases of the
+      heart and blood vessels.
+    </div>
+  </div>
+
+  <div class="item excel" style="background-image: url(dentist.jpg); background-size: cover;">
+    <div class="header2">
+      <div class="title2">
+        DENTIST
+      </div>
+    </div>
+    <div class="contents">
+      A dentist is a medical professional who specializes in dentistry, the
+      diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.
+    </div>
+  </div>
+
+  <div class="item powerpoint" style="background-image: url(Gynaecologist.jpg); background-size: cover;">
+    <div class="header2">
+      <div class="title2">
+        GYNAECOLOGIST
+      </div>
+    </div>
+    <div class="contents">
+      Gynaecology is the medical practice dealing with the health of the
+      female reproductive system.
+    </div>
+  </div>
+
+  <div class="item pdf" style="background-image: url(last.jpg); background-size: cover;" >
+    <div class="header2">
+      <div class="title">
+        PAEDIATRICIAN
+      </div>
+    </div>
+    <div class="contents">
+      A pediatrician is medical doctor who manages the physical, behavioral, and mental care for children from birth
+      until age 18.
+    </div>
+  </div>
+
+</div>
+TILES RESPONSIVE -->
+
+
+<div class="container" style=" display: flex; flex-direction:column; justify-content: center; align-items: center;">
+
+    <div class="page-header" style="text-align: left; display: flex; justify-content: left;">
+        <p class="lead"
+           style="font-weight: bold; font-size: 30px; text-align: left; color: whitesmoke; text-decoration: underline;">
+            Book Appointment
+        </p>
+    </div>
+    <form class="form-horizontal col-sm-6" role="form"
+          style="background-color: rgba(255, 255, 255, 0.7); padding: 40px;">
+        <div class="form-group">
+            <label for="FullName">Full Name</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                </div>
+                <input class="form-control" data-validation="custom" data-validation="length" data-validation-error-msg-container="#ErrorName" data-validation-length="1-100"
+                       data-validation-regexp="^([a-zA-Z ]+)$" id="FullName" placeholder="Full Name"
+                       required type="text">
+            </div>
+            <span id="ErrorName"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Portfolio">Gender:</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="	glyphicon glyphicon-option-horizontal"></i>
+                </div>
+                <select class="form-control">
+                    <!-- <option placeholder="choose"></option> -->
+                    <option>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="DOB">Date of Birth</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </div>
+                <input id="date1" name="Date" style="width: 99%;" type="date"> &nbsp
+                <!-- <input type="text" class="form-control" id="DOB" placeholder="Date of Birth" data-validation="date"
+                              data-validation-format="dd/mm/yyyy" data-validation-error-msg-container="#ErrorDOB" required> -->
+            </div>
+            <span id="ErrorDOB"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Description">Problem</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </div>
+                <textarea class="form-control" cols="50" placeholder="Describe your problem here..."
+                          rows="2"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Email">Email Address</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                </div>
+                <input class="form-control" data-validation="email" data-validation-error-msg-container="#ErrorEmail" id="Email" placeholder="Email Address"
+                       required type="email">
+            </div>
+            <span id="ErrorEmail"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Contact Number">Contact Number</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-earphone"></i>
+                </div>
+                <input autocomplete="off" class="form-control" id="userInput" placeholder="Contact Number" type="text">
+
+            </div>
+            <a href="https://wa.me/" onclick="location.href=this.href+val;return false;" style="float: right;"
+               target="_blank">
+            </a></input>
+        </div>
+
+
+        <!-- <div class="form-group">
+                  <label for="Country">Country:</label>
+                  <div class="input-group">
+                      <div class="input-group-addon">
+                          <i class="glyphicon glyphicon-globe" aria-hidden="true"></i>
+                      </div>
+                      <input name="user_country" data-validation="country" placeholder="Country" id="Country"
+                          class="form-control" data-validation-error-msg-container="#ErrorCountry" required>
+                  </div>
+                  <span id="ErrorCountry"></span>
+              </div> -->
+
+
+        <div class="form-group">
+            <label for="Portfolio">Service:</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="	glyphicon glyphicon-option-horizontal"></i>
+                </div>
+                <select class="form-control">
+                    <!-- <option placeholder="choose"></option> -->
+                    <option>Dermatology</option>
+                    <option>Pyschiatry</option>
+                    <option>COVID-19</option>
+                    <option>Diet</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="UploadAvatar">Upload Photo(Optional)</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-camera"></i>
+                </div>
+                <input class="form-control" data-validation="mime size" data-validation-allowing="jpg, png, gif" data-validation-error-msg-container="#ErrorPic"
+                       data-validation-max-size="10M" placeholder="Upload Your Image"
+                       required type="file">
+            </div>
+            <span id="ErrorPic"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Education">History regarding problem</label>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </div>
+                <textarea class="form-control" placeholder="List details here..." rows="2"></textarea>
+            </div>
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="Slots">Time Slot Available</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+              </div>
+            <textarea class="form-control" rows="2"
+                placeholder="List your educational details here..."></textarea>
+            <label for="Date" style="padding-right: 10px;">Date</label>
+            <input type="date" id="date1" name="Date" style="width: 180px;"> &nbsp
+            <label for="appt" style="padding-right: 10px; ">Choose a time</label>
+            <input style="width: 180px;" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+          </div>
+        </div> -->
+
+        <div class="form-group">
+            <label for="Slots">Slot you wish to book (All Days: 9:00am - 5:00pm):</label>
+            <div class="header" id="myDIV">
+                <!-- <h2 style="margin:5px">My To Do List</h2> -->
+                <input autocomplete="off" id="myInput" placeholder="Ex: Monday 10:00am" type="text">
+                <span class="addBtn" onclick="newElement()">Add</span>
+            </div>
+            <ul id="myUL"></ul>
+            <br>
+
+            <!-- <div class="form-group" style="padding: 0px 14px 0px 14px;">
+              <label for="Slots">Testimonials</label>
+              <div class="input-group">
+                <textarea class="form-control" rows="2" cols="50" placeholder="Testimonial 1.."></textarea>
+                <textarea class="form-control" rows="2" cols="50" placeholder="Testimonial 2.."></textarea>
+              </div>
+            </div> -->
+            <br>
+            <br><br>
+            <div class="form-group" style="width: 50%; margin: auto;">
+                <input class="form-control btn btn-primary" type="submit" value="Register">
+            </div>
+
+    </form>
+</div>
+
+
+<!-- Container -->
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<script>
+    $('#DOB').datepicker({
+        showOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "-50:+0",
+        dateFormat: 'dd/mm/yy',
+    });
+
+    $.validate({
+        lang: 'en'
+    });
+
+    $.validate({
+        modules: 'security'
+    });
+
+    $.validate({
+        modules: 'location',
+        onModulesLoaded: function () {
+            $('input[name="user_country"]').suggestCountry();
+            $('input[name="user_home_state"]').suggestState();
+        }
+    });
+
+    $.validate({
+        modules: 'date'
+    });
+
+    $.validate({
+        modules: 'file'
+    });
+</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script crossorigin="anonymous"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!-- SLOTS JS -->
+<script>
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+
+        var span = document.createElement("SPAN");
+        // var txt = document.createTextNode("\u00D7");
+
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+    }
+</script>
+<!-- SLOTS JS -->
+
+
+<script>
+    var val = document.getElementById("userInput").value;
+</script>
+</body>
+
+</html>
